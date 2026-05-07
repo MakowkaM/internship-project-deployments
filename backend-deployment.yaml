@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: REPOSITORY_URI/ECR_BACKEND_REPO:1
+          image: 038462771803.dkr.ecr.us-east-1.amazonaws.com/noteapp:6
           ports:
             - containerPort: 5000
           envFrom:
