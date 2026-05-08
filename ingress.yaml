@@ -3,20 +3,21 @@ kind: Ingress
 metadata:
   name: notes-ingress
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
   ingressClassName: nginx
   rules:
-    - http:
+    - host: a0d2e452659c744129ce82024aa3f295-0aa18c5e55b371ab.elb.us-east-1.amazonaws.com
+      http:
         paths:
-          - path: /api
+          - path: /api(/|$)(.*)
             pathType: Prefix
             backend:
               service:
                 name: backend
                 port:
                   number: 5000
-          - path: /
+          - path: /()(.*)
             pathType: Prefix
             backend:
               service:
