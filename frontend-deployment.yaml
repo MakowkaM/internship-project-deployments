@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: REPOSITORY_URI/ECR_FRONTEND_REPO:1
+          image: 038462771803.dkr.ecr.us-east-1.amazonaws.com/noteapp:7
           ports:
             - containerPort: 80
