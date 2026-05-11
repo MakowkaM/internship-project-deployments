@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: 038462771803.dkr.ecr.us-east-1.amazonaws.com/noteapp-backend:21
+          image: 038462771803.dkr.ecr.us-east-1.amazonaws.com/noteapp-backend:22
           ports:
             - containerPort: 5000
           envFrom:
