@@ -21,3 +21,5 @@ spec:
           envFrom:
             - secretRef:
                 name: notes-secret
+            - secretRef:
+                name: ollama-config
