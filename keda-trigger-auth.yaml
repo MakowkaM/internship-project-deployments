@@ -1,0 +1,9 @@
+apiVersion: keda.sh/v1alpha1
+kind: TriggerAuthentication
+metadata:
+  name: db-trigger-auth
+spec:
+  secretTargetRef:
+    - parameter: connection
+      name: notes-secret
+      key: DATABASE_URL
