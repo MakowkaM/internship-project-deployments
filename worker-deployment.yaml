@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: llm-worker
 spec:
+  revisionHistoryLimit: 1
   selector:
     matchLabels:
       app: llm-worker
