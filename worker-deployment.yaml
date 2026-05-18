@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: llm-worker
-          image: 038462771803.dkr.ecr.us-east-1.amazonaws.com/noteapp-worker:25
+          image: 038462771803.dkr.ecr.us-east-1.amazonaws.com/noteapp-worker:26
           envFrom:
             - secretRef:
                 name: notes-secret
