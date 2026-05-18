@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: 038462771803.dkr.ecr.us-east-1.amazonaws.com/noteapp-frontend:24
+          image: 038462771803.dkr.ecr.us-east-1.amazonaws.com/noteapp-frontend:25
           ports:
             - containerPort: 80
